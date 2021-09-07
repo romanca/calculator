@@ -106,7 +106,6 @@ const Keypad = () => {
           height: "10.4vh",
           width: "100%",
           display: "flex",
-          color: "#616161",
         }}
       >
         {firstButtonLine.map((item) => {
@@ -118,7 +117,6 @@ const Keypad = () => {
           height: "10.4vh",
           width: "100%",
           display: "flex",
-          color: "#616161",
         }}
       >
         {secondButtonLine.map((item) => {
@@ -130,7 +128,6 @@ const Keypad = () => {
           height: "10.4vh",
           width: "100%",
           display: "flex",
-          color: "#616161",
         }}
       >
         {thirdButtonLine.map((item) => {
@@ -142,7 +139,6 @@ const Keypad = () => {
           height: "10.4vh",
           width: "100%",
           display: "flex",
-          color: "#616161",
         }}
       >
         {fourthButtonLine.map((item) => {
@@ -154,7 +150,6 @@ const Keypad = () => {
           height: "10.4vh",
           width: "100%",
           display: "flex",
-          color: "#616161",
         }}
       >
         {fifthButtonLine.map((item) => {

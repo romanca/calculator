@@ -17,6 +17,7 @@ const LargeButton = ({ item }) => {
         borderRadius: 5,
         cursor: "pointer",
         fontFamily: "ArialRoundedMTBold",
+        color: "#757575",
       }}
     >
       =

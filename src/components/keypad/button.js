@@ -17,6 +17,7 @@ const Button = ({ children }) => {
         borderRadius: 5,
         cursor: "pointer",
         fontFamily: "ArialRoundedMTBold",
+        color: "#757575",
       }}
     >
       {children}
