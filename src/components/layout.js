@@ -1,4 +1,5 @@
 import React from "react";
+import Keypad from "./keypad";
 
 const Layout = () => {
   return (
@@ -9,7 +10,9 @@ const Layout = () => {
         border: "1px solid black",
         borderRadius: 10,
       }}
-    ></div>
+    >
+      <Keypad />
+    </div>
   );
 };
 
