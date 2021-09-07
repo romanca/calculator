@@ -1,5 +1,5 @@
 import React from "react";
-import Keypad from "./keypad";
+import Screen from "./screen";
 
 const Layout = () => {
   return (
@@ -11,7 +11,7 @@ const Layout = () => {
         borderRadius: 10,
       }}
     >
-      <Keypad />
+      <Screen />
     </div>
   );
 };
