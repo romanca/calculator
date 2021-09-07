@@ -9,6 +9,8 @@ const App = () => {
         alignItems: "center",
         justifyContent: "center",
         height: "100vh",
+        backgroundImage: "linear-gradient(to bottom right,blue, purple)",
+        backgroundSize: "cover",
       }}
     >
       <Layout />
