@@ -1,4 +1,5 @@
 import React from "react";
+import Screen from "./screen";
 
 const Layout = () => {
   return (
@@ -9,7 +10,9 @@ const Layout = () => {
         border: "1px solid black",
         borderRadius: 10,
       }}
-    ></div>
+    >
+      <Screen />
+    </div>
   );
 };
 
