@@ -4,7 +4,7 @@ const ResultScreen = () => {
   return (
     <div
       style={{
-        height: "13vh",
+        height: "15vh",
         fontSize: "1.5rem",
         fontWeight: 600,
         display: "flex",
@@ -12,6 +12,8 @@ const ResultScreen = () => {
         alignItems: "flex-end",
         marginRight: 10,
         marginBottom: 18,
+        fontFamily: "ArialRoundedMTBold",
+        borderRadius: 10,
       }}
     >
       10/50

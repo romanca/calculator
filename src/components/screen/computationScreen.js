@@ -11,6 +11,8 @@ const ComputationScreen = () => {
         alignItems: "center",
         marginTop: 10,
         marginRight: 7,
+        fontFamily: "ArialRoundedMTBold",
+        borderRadius: 10,
       }}
     >
       20

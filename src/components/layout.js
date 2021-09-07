@@ -1,4 +1,5 @@
 import React from "react";
+import Keypad from "./keypad";
 import Screen from "./screen";
 
 const Layout = () => {
@@ -12,6 +13,7 @@ const Layout = () => {
       }}
     >
       <Screen />
+      <Keypad />
     </div>
   );
 };
