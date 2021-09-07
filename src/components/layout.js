@@ -1,4 +1,5 @@
 import React from "react";
+import Keypad from "./keypad";
 import Screen from "./screen";
 
 const Layout = () => {
@@ -7,12 +8,14 @@ const Layout = () => {
       style={{
         height: 600,
         width: 400,
-        border: "1px solid black",
         borderRadius: 10,
+        boxShadow: "0 2rem 4rem",
+        borderRadius: 5,
+        background: "#eee",
       }}
     >
       <Screen />
-      fwef
+      <Keypad />
     </div>
   );
 };
