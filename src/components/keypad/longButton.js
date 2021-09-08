@@ -1,11 +1,12 @@
 import React from "react";
 
-const LargeButton = ({ item }) => {
+const LongButton = ({ item }) => {
   return (
     <div
       style={{
-        width: "50.5%",
-        height: "100%",
+        width: "25%",
+        height: "200%",
+        marginTop: -80,
         fontSize: "3rem",
         fontFamily: "inherit",
         background: "white",
@@ -25,4 +26,4 @@ const LargeButton = ({ item }) => {
   );
 };
 
-export default LargeButton;
+export default LongButton;

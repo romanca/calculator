@@ -12,7 +12,7 @@ const Screen = () => {
         whiteSpace: "nowrap",
         borderRadius: "5px 5px 0px 0px",
         color: "white",
-        background: "#7c4dff",
+        background: "green",
       }}
     >
       <ResultScreen />
