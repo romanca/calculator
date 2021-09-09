@@ -11,37 +11,37 @@ import Button from "./button";
 import LargeButton from "./largeButton";
 import LongButton from "./longButton";
 
-const Keypad = () => {
+const Keypad = ({ handleButtonClick }) => {
   return (
     <KeypadContainer>
       <ButtonsLine>
         {firstButtonLine.map((item) => {
-          return <Button item={item} />;
+          return <Button item={item} handleButtonClick={handleButtonClick} />;
         })}
       </ButtonsLine>
       <ButtonsLine>
         {secondButtonLine.map((item) => {
-          return <Button item={item} />;
+          return <Button item={item} handleButtonClick={handleButtonClick} />;
         })}
       </ButtonsLine>
       <ButtonsLine>
         {thirdButtonLine.map((item) => {
-          return <Button item={item} />;
+          return <Button item={item} handleButtonClick={handleButtonClick} />;
         })}
       </ButtonsLine>
       <FourthButtonLine>
         {fourthButtonLine.map((item) => {
-          return <Button item={item} />;
+          return <Button item={item} handleButtonClick={handleButtonClick} />;
         })}
       </FourthButtonLine>
       <ButtonsLine>
         {fifthButtonLine.map((item) => {
           return item.title === "0" ? (
-            <LargeButton item={item} />
+            <LargeButton item={item} handleButtonClick={handleButtonClick} />
           ) : item.title === "=" ? (
-            <LongButton item={item} />
+            <LongButton item={item} handleButtonClick={handleButtonClick} />
           ) : (
-            <Button item={item} />
+            <Button item={item} handleButtonClick={handleButtonClick} />
           );
         })}
       </ButtonsLine>

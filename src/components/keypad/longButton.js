@@ -1,8 +1,12 @@
 import React from "react";
 import { LongButtonContainer } from "../../styled";
 
-const LongButton = ({ item }) => {
-  return <LongButtonContainer>{item.title}</LongButtonContainer>;
+const LongButton = ({ item, handleButtonClick }) => {
+  return (
+    <LongButtonContainer onClick={() => handleButtonClick(item.title)}>
+      {item.title}
+    </LongButtonContainer>
+  );
 };
 
 export default LongButton;

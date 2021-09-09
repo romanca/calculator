@@ -1,8 +1,10 @@
 import React from "react";
 import { ComputationScreenContainer } from "../../styled";
 
-const ComputationScreen = () => {
-  return <ComputationScreenContainer>20</ComputationScreenContainer>;
+const ComputationScreen = ({ currentNumber }) => {
+  return (
+    <ComputationScreenContainer>{currentNumber}</ComputationScreenContainer>
+  );
 };
 
 export default ComputationScreen;
