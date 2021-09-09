@@ -1,21 +1,8 @@
 import React from "react";
+import { ComputationScreenContainer } from "../../styled";
 
 const ComputationScreen = () => {
-  return (
-    <div
-      style={{
-        height: "6vh",
-        fontSize: "6rem",
-        display: "flex",
-        justifyContent: "flex-end",
-        alignItems: "center",
-        marginTop: 10,
-        marginRight: 7,
-      }}
-    >
-      20
-    </div>
-  );
+  return <ComputationScreenContainer>20</ComputationScreenContainer>;
 };
 
 export default ComputationScreen;

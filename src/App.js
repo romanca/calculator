@@ -1,20 +1,16 @@
 import React from "react";
 import Layout from "./components/layout";
+import { theme } from "./Providers/theme";
+import Theme from "./Providers/ThemeProvider";
+import { AppContainer } from "./styled";
 
 const App = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        backgroundImage: "linear-gradient(to bottom right,#004d40, #80cbc4)",
-        backgroundSize: "cover",
-      }}
-    >
-      <Layout />
-    </div>
+    <Theme theme={theme}>
+      <AppContainer>
+        <Layout />
+      </AppContainer>
+    </Theme>
   );
 };
 

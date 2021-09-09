@@ -1,22 +1,8 @@
 import React from "react";
+import { ResultScreenContainer } from "../../styled";
 
 const ResultScreen = () => {
-  return (
-    <div
-      style={{
-        height: "13vh",
-        fontSize: "1.5rem",
-        fontWeight: 600,
-        display: "flex",
-        justifyContent: "flex-end",
-        alignItems: "flex-end",
-        marginRight: 10,
-        marginBottom: 18,
-      }}
-    >
-      10/50
-    </div>
-  );
+  return <ResultScreenContainer>10/50</ResultScreenContainer>;
 };
 
 export default ResultScreen;

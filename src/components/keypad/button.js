@@ -1,4 +1,5 @@
 import React from "react";
+import { ButtonContainer } from "../../styled";
 
 const Button = ({ item }) => {
   const switchBackgroundColors = () => {
@@ -22,26 +23,9 @@ const Button = ({ item }) => {
   });
 
   return (
-    <div
-      style={{
-        width: "25%",
-        height: "100%",
-        fontSize: "3rem",
-        fontFamily: "inherit",
-        background: switchBackgroundColors(),
-        border: "1px solid #eee",
-        outline: "none",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        borderRadius: 10,
-        cursor: "pointer",
-        fontFamily: "ArialRoundedMTBold",
-        color: "white",
-      }}
-    >
+    <ButtonContainer style={{ background: switchBackgroundColors() }}>
       {item.title}
-    </div>
+    </ButtonContainer>
   );
 };
 
