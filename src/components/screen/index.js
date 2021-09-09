@@ -10,9 +10,9 @@ const Screen = () => {
         width: 400,
         overflow: "hidden",
         whiteSpace: "nowrap",
-        borderRadius: "5px 5px 0px 0px",
+        borderRadius: "10px 10px 0px 0px",
         color: "white",
-        background: "green",
+        background: "black",
       }}
     >
       <ResultScreen />

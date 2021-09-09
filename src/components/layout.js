@@ -9,7 +9,7 @@ const Layout = () => {
         height: 600,
         width: 400,
         boxShadow: "0 2rem 4rem",
-        borderRadius: 5,
+        borderRadius: 10,
       }}
     >
       <Screen />
