@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonContainer } from "../../styled";
 
-const Button = ({ item }) => {
+const Button = ({ item, handleButtonClick }) => {
   const switchBackgroundColors = () => {
     return item.title === "C"
       ? "#ff1744"
@@ -23,7 +23,10 @@ const Button = ({ item }) => {
   });
 
   return (
-    <ButtonContainer style={{ background: switchBackgroundColors() }}>
+    <ButtonContainer
+      style={{ background: switchBackgroundColors() }}
+      onClick={() => handleButtonClick(item.title)}
+    >
       {item.title}
     </ButtonContainer>
   );

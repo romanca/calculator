@@ -3,11 +3,11 @@ import { ScreenContainer } from "../../styled";
 import ComputationScreen from "./computationScreen";
 import ResultScreen from "./resultScreen";
 
-const Screen = () => {
+const Screen = ({ operation, currentNumber }) => {
   return (
     <ScreenContainer>
-      <ResultScreen />
-      <ComputationScreen />
+      <ResultScreen operation={operation} />
+      <ComputationScreen currentNumber={currentNumber} />
     </ScreenContainer>
   );
 };

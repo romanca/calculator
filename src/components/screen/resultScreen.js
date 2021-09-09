@@ -1,8 +1,8 @@
 import React from "react";
 import { ResultScreenContainer } from "../../styled";
 
-const ResultScreen = () => {
-  return <ResultScreenContainer>10/50</ResultScreenContainer>;
+const ResultScreen = ({ operation }) => {
+  return <ResultScreenContainer>{operation}</ResultScreenContainer>;
 };
 
 export default ResultScreen;
