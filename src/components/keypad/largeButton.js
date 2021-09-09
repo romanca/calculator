@@ -8,16 +8,16 @@ const LargeButton = ({ item }) => {
         height: "100%",
         fontSize: "3rem",
         fontFamily: "inherit",
-        background: "white",
+        background: "#212121",
         border: "1px solid #eee",
         outline: "none",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        borderRadius: 5,
+        borderRadius: 10,
         cursor: "pointer",
         fontFamily: "ArialRoundedMTBold",
-        color: "#757575",
+        color: "white",
       }}
     >
       {item.title}

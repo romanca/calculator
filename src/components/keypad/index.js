@@ -28,7 +28,7 @@ const Keypad = () => {
         }}
       >
         {firstButtonLine.map((item) => {
-          return <Button>{item.title}</Button>;
+          return <Button item={item} />;
         })}
       </div>
       <div
@@ -39,7 +39,7 @@ const Keypad = () => {
         }}
       >
         {secondButtonLine.map((item) => {
-          return <Button>{item.title}</Button>;
+          return <Button item={item} />;
         })}
       </div>
       <div
@@ -50,7 +50,7 @@ const Keypad = () => {
         }}
       >
         {thirdButtonLine.map((item) => {
-          return <Button>{item.title}</Button>;
+          return <Button item={item} />;
         })}
       </div>
       <div
@@ -61,7 +61,7 @@ const Keypad = () => {
         }}
       >
         {fourthButtonLine.map((item) => {
-          return <Button>{item.title}</Button>;
+          return <Button item={item} />;
         })}
       </div>
       <div
@@ -77,7 +77,7 @@ const Keypad = () => {
           ) : item.title === "=" ? (
             <LongButton item={item} />
           ) : (
-            <Button>{item.title}</Button>
+            <Button item={item} />
           );
         })}
       </div>
