@@ -1,20 +1,14 @@
 import React from "react";
+import { LayoutContainer } from "../styled";
 import Keypad from "./keypad";
 import Screen from "./screen";
 
 const Layout = () => {
   return (
-    <div
-      style={{
-        height: 600,
-        width: 400,
-        boxShadow: "0 2rem 4rem",
-        borderRadius: 10,
-      }}
-    >
+    <LayoutContainer>
       <Screen />
       <Keypad />
-    </div>
+    </LayoutContainer>
   );
 };
 

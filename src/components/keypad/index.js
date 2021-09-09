@@ -6,71 +6,35 @@ import {
   secondButtonLine,
   thirdButtonLine,
 } from "../../mockData";
+import { ButtonsLine, FourthButtonLine, KeypadContainer } from "../../styled";
 import Button from "./button";
 import LargeButton from "./largeButton";
 import LongButton from "./longButton";
 
 const Keypad = () => {
   return (
-    <div
-      style={{
-        height: 400,
-        background: "#eee",
-        width: "100%",
-        borderRadius: "0px 0px 10px 10px",
-      }}
-    >
-      <div
-        style={{
-          height: "10.4vh",
-          width: "100%",
-          display: "flex",
-        }}
-      >
+    <KeypadContainer>
+      <ButtonsLine>
         {firstButtonLine.map((item) => {
           return <Button item={item} />;
         })}
-      </div>
-      <div
-        style={{
-          height: "10.4vh",
-          width: "100%",
-          display: "flex",
-        }}
-      >
+      </ButtonsLine>
+      <ButtonsLine>
         {secondButtonLine.map((item) => {
           return <Button item={item} />;
         })}
-      </div>
-      <div
-        style={{
-          height: "10.4vh",
-          width: "100%",
-          display: "flex",
-        }}
-      >
+      </ButtonsLine>
+      <ButtonsLine>
         {thirdButtonLine.map((item) => {
           return <Button item={item} />;
         })}
-      </div>
-      <div
-        style={{
-          height: "10.4vh",
-          width: "98%",
-          display: "flex",
-        }}
-      >
+      </ButtonsLine>
+      <FourthButtonLine>
         {fourthButtonLine.map((item) => {
           return <Button item={item} />;
         })}
-      </div>
-      <div
-        style={{
-          height: "10.4vh",
-          width: "100%",
-          display: "flex",
-        }}
-      >
+      </FourthButtonLine>
+      <ButtonsLine>
         {fifthButtonLine.map((item) => {
           return item.title === "0" ? (
             <LargeButton item={item} />
@@ -80,8 +44,8 @@ const Keypad = () => {
             <Button item={item} />
           );
         })}
-      </div>
-    </div>
+      </ButtonsLine>
+    </KeypadContainer>
   );
 };
 
