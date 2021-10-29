@@ -105,6 +105,7 @@ export const KeypadContainer = styled.div`
     ${(props) => props.theme.spaces[4]};
   @media (max-width: 768px) {
     height: 100%;
+    width: 100%;
   }
 `;
 
