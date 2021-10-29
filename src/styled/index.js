@@ -18,6 +18,10 @@ export const LayoutContainer = styled.div`
   box-shadow: ${(props) => props.theme.spaces[9]}
     ${(props) => props.theme.spaces[22]} ${(props) => props.theme.spaces[23]};
   border-radius: ${(props) => props.theme.spaces[4]};
+  background: red;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 export const ResultScreenContainer = styled.div`
@@ -40,6 +44,9 @@ export const ScreenContainer = styled.div`
     ${(props) => props.theme.spaces[9]};
   color: ${(props) => props.theme.colors.text};
   background: ${(props) => props.theme.colors.background4};
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 export const ComputationScreenContainer = styled.div`
