@@ -21,6 +21,7 @@ export const LayoutContainer = styled.div`
   background: red;
   @media (max-width: 768px) {
     width: 300px;
+    height: 450px;
   }
 `;
 
@@ -46,6 +47,7 @@ export const ScreenContainer = styled.div`
   background: ${(props) => props.theme.colors.background4};
   @media (max-width: 768px) {
     width: 300px;
+    height: 450px;
   }
 `;
 
